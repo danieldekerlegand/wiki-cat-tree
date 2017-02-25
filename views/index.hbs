@@ -1,13 +1,19 @@
-<h1>{{title}}</h1>
-<p>Please specify category:</p>
-<br/>
-
 <div class="container">
   <div class="row">
-    <div class="col-sm-offset-2 col-sm-6">
-      <form id="getTree" action="category">
-        Category:<br/>
-        <input type="text" id="category">
+    <div class="col-sm-12 text-center">
+      <h1>{{title}}</h1>
+      <p>Please specify category:</p>
+      <br/><br/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <form id="getTree" action="/category" method="get">
+        <div>
+          <label for="category">Category</label>
+          <input name="category" type="text">
+        </div>
+        <br/><br/>
         <input type="submit" value="Submit">
       </form>
     </div>
